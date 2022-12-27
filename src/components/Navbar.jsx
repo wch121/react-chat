@@ -7,7 +7,7 @@ const Navbar = () => {
             <div className="user">
                 <img src="https://uploadfile.bizhizu.cn/2017/0701/20170701031430776.jpg" alt="" />
                 <span>john</span>
-                <button >logout</button>
+                <button >退出登录</button>
             </div>
         </div>
     )
