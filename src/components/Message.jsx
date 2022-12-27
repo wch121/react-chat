@@ -2,7 +2,19 @@ import React from 'react'
 
 const Message = () => {
     return (
-        <div>Message</div>
+        <div className="message owner">
+            <div className="messageInfo">
+                <img
+                    src="https://uploadfile.bizhizu.cn/2017/0701/20170701031430776.jpg"
+                    alt=""
+                />
+                <span>刚刚</span>
+            </div>
+            <div className="messageContent">
+                <p>hello</p>
+                <img src="https://uploadfile.bizhizu.cn/2017/0701/20170701031430776.jpg" alt="" />
+            </div>
+        </div>
     )
 }
 
