@@ -4,7 +4,7 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const Register = () => {
@@ -38,6 +38,7 @@ const Register = () => {
                             displayName,
                             photoURL: downloadURL,
                         });
+
                         //create user on firestore
                         await setDoc(doc(db, "users", res.user.uid), {
                             uid: res.user.uid,
@@ -53,8 +54,7 @@ const Register = () => {
         } catch (err) {
             setErr(true);
         }
-
-    }
+    };
 
     return (
         <div className="formContainer">
@@ -74,7 +74,7 @@ const Register = () => {
                     {err && <span>出错了</span>}
                 </form>
                 <p>
-                    你有账号了吗? 去登录
+                    你有账号了吗? <Link to="/login">去登录</Link>
                 </p>
             </div>
         </div>
