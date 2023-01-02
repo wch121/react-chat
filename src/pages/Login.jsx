@@ -24,7 +24,7 @@ const Login = () => {
     return (
         <div className="formContainer">
             <div className="formWrapper">
-                <span className="logo">Lama Chat</span>
+                <span className="logo">WCH Chat</span>
                 <span className="title">登录</span>
                 <form onSubmit={handleSubmit}>
                     <input type="email" placeholder="邮箱" />

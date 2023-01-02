@@ -59,7 +59,7 @@ const Register = () => {
     return (
         <div className="formContainer">
             <div className="formWrapper">
-                <span className="logo">Lama Chat</span>
+                <span className="logo">WCH Chat</span>
                 <span className="title">注册</span>
                 <form onSubmit={handleSubmit}>
                     <input type="text" placeholder="用户名" />
